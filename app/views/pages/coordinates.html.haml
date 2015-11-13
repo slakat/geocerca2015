@@ -1,0 +1,22 @@
+%h1 Geocerca2015
+%p HISTORIAL DE UBICACIÓN DE LA BICILETA
+
+%p Últimos 40 registros
+
+
+%table
+  %thead
+  %tr
+    %th FECHA
+    %th LATITUD Y
+    %th LONGITUD X
+    %th ESTADO
+    %th NRO BICI
+  %tbody
+    - @items.each do |row|
+      %tr
+        %td= row.created_at
+        %td= row.latitude
+        %td= row.longitude
+        %td= row.state
+        %td= row.bike
