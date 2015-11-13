@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+    background: #eee;
+}
+
+.content{
+    background: #ffffff;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2%;
+    align-content: center;
+    display: block;
+    -webkit-box-shadow: 2px 6px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 5px -4px rgba(0,0,0,0.75);
+    height: 98%;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+
+}
+
+.content table{
+    margin: 0 auto;
+}

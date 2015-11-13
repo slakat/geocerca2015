@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'pages/home'
   get "coordinates", to: 'pages#coordinates'
+  post '/polygons/create',:defaults =>{:format => 'js'}, to: 'pages#polygons', :as => :create_polygons
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
     #/insertar?lat=33299869&lon=70989&idbici=30&estado=inside&h=700
     get "/insertar", :defaults =>{:format => 'json'}, to: "coordinates#insert", as: :insert
     get "/actual", :defaults =>{:format => 'json'}, to: "coordinates#actual", as: :actual
-    get "/poligonos", :defaults =>{:format => 'json'}, to: "coordinates#polygons", as: :polygons
+    get "/poligono", :defaults =>{:format => 'json'}, to: "coordinates#polygons", as: :polygons
   end
 
 

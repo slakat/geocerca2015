@@ -14,7 +14,7 @@ module Api
 
   def polygons
     @polygon = Polygon.last
-    render json: [@polygon.coodinates]
+    render json: @polygon.coordinates
   end
 end
 end
