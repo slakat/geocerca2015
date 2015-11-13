@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/home'
+  get 'geocerca', to: 'pages#geocerca', as: :geocerca
   get "coordinates", to: 'pages#coordinates'
   post '/polygons/create',:defaults =>{:format => 'js'}, to: 'pages#polygons', :as => :create_polygons
 

@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
+
   def home
+
+  end
+
+  def geocerca
     @polygons = Polygon.new
   end
 

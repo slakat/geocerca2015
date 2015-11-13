@@ -1,5 +1,6 @@
 module Api
   class CoordinatesController < ApplicationController
+    skip_before_filter :authenticate
 
   def insert
     #/insertar?lat=33299869&lon=70989&idbici=30&estado=inside&h=700
