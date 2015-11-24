@@ -15,7 +15,7 @@
       %th ESTADO
       %th NRO BICI
     %tbody
-      - @items.each do |row|
+      - @items.last(40).reverse.each do |row|
         %tr
           %td= row.created_at
           %td= row.latitude

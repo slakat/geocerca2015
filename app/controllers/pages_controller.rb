@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def coordinates
-    @items = Coordinate.all.limit(40)
+    @items = Coordinate.all
   end
 
   def polygons
