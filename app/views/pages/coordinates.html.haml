@@ -17,7 +17,7 @@
     %tbody
       - @items.last(40).reverse.each do |row|
         %tr
-          %td= row.created_at
+          %td= row.created_at.in_time_zone("Santiago").to_s(:long)
           %td= row.latitude
           %td= row.longitude
           %td= row.state
